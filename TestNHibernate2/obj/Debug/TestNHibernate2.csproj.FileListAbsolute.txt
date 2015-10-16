@@ -1,0 +1,13 @@
+c:\users\eminso\documents\visual studio 2013\Projects\Tests\TestNHibernate2\bin\Debug\TestNHibernate2.exe.config
+c:\users\eminso\documents\visual studio 2013\Projects\Tests\TestNHibernate2\bin\Debug\TestNHibernate2.exe
+c:\users\eminso\documents\visual studio 2013\Projects\Tests\TestNHibernate2\bin\Debug\TestNHibernate2.pdb
+c:\users\eminso\documents\visual studio 2013\Projects\Tests\TestNHibernate2\bin\Debug\Iesi.Collections.dll
+c:\users\eminso\documents\visual studio 2013\Projects\Tests\TestNHibernate2\bin\Debug\NHibernate.dll
+c:\users\eminso\documents\visual studio 2013\Projects\Tests\TestNHibernate2\bin\Debug\Iesi.Collections.xml
+c:\users\eminso\documents\visual studio 2013\Projects\Tests\TestNHibernate2\bin\Debug\NHibernate.xml
+c:\users\eminso\documents\visual studio 2013\Projects\Tests\TestNHibernate2\obj\Debug\TestNHibernate2.csprojResolveAssemblyReference.cache
+c:\users\eminso\documents\visual studio 2013\Projects\Tests\TestNHibernate2\obj\Debug\TestNHibernate2.Properties.Resources.resources
+c:\users\eminso\documents\visual studio 2013\Projects\Tests\TestNHibernate2\obj\Debug\TestNHibernate2.csproj.GenerateResource.Cache
+c:\users\eminso\documents\visual studio 2013\Projects\Tests\TestNHibernate2\obj\Debug\TestNHibernate2.exe
+c:\users\eminso\documents\visual studio 2013\Projects\Tests\TestNHibernate2\obj\Debug\TestNHibernate2.pdb
+c:\users\eminso\documents\visual studio 2013\Projects\Tests\TestNHibernate2\obj\Debug\TestNHibernate2.FormMain.resources
