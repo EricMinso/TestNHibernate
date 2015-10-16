@@ -6,10 +6,16 @@ using System.Threading.Tasks;
 
 namespace TestNHibernate2
 {
-    class Projet
+    public class Projet
     {
         public long     Identifiant { get; set; }
         public string   Nom { get; set; }
         //public DateTime DateDébut { get; set; }
+
+        public Projet( string nom )
+        {
+            this.Identifiant = 0;
+            this.Nom = nom;
+        }
     }
 }

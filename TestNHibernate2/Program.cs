@@ -37,7 +37,7 @@ namespace TestNHibernate2
             );
 
             if( ex.InnerException != null &&
-                DialogResult.Yes == MessageBox.Show("Une exception plus précise est à l'origine de cette erreur. Voulez-vous la consulter ?", "InnerException trouvée", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1 ))
+              DialogResult.Yes == MessageBox.Show("Une exception plus précise est à l'origine de cette erreur. Voulez-vous la consulter ?", "InnerException trouvée", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1 ))
                 DisplayException( ex.InnerException );
         }
     }

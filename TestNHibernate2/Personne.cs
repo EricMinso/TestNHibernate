@@ -13,5 +13,13 @@ namespace TestNHibernate2
         public string Prenom { get; set; }
         public string Adresse { get; set; }
         public string Telephone { get; set; }
+
+        public Personne( string nom, string prénom, string adresse, string téléphone )
+        {
+            this.Nom = nom;
+            this.Prenom = prénom;
+            this.Adresse = adresse;
+            this.Telephone = téléphone;
+        }
     }
 }
