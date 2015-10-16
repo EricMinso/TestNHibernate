@@ -1,9 +1,4 @@
 C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\TestNHibernate2\bin\Debug\TestNHibernate2.exe.config
-C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\TestNHibernate2\obj\Debug\TestNHibernate2.csprojResolveAssemblyReference.cache
-C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\TestNHibernate2\obj\Debug\TestNHibernate2.FormMain.resources
-C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\TestNHibernate2\obj\Debug\TestNHibernate2.FormPersonne.resources
-C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\TestNHibernate2\obj\Debug\TestNHibernate2.Properties.Resources.resources
-C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\TestNHibernate2\obj\Debug\TestNHibernate2.csproj.GenerateResource.Cache
 C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\TestNHibernate2\bin\Debug\TestNHibernate2.exe
 C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\TestNHibernate2\bin\Debug\TestNHibernate2.pdb
 C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\TestNHibernate2\bin\Debug\Iesi.Collections.dll
@@ -12,5 +7,9 @@ C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\TestNHibernate2\bin\
 C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\TestNHibernate2\bin\Debug\Iesi.Collections.xml
 C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\TestNHibernate2\bin\Debug\log4net.xml
 C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\TestNHibernate2\bin\Debug\NHibernate.xml
+C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\TestNHibernate2\obj\Debug\TestNHibernate2.FormMain.resources
+C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\TestNHibernate2\obj\Debug\TestNHibernate2.FormPersonne.resources
+C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\TestNHibernate2\obj\Debug\TestNHibernate2.Properties.Resources.resources
+C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\TestNHibernate2\obj\Debug\TestNHibernate2.csproj.GenerateResource.Cache
 C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\TestNHibernate2\obj\Debug\TestNHibernate2.exe
 C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\TestNHibernate2\obj\Debug\TestNHibernate2.pdb
