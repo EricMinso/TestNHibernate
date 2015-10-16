@@ -8,7 +8,7 @@ namespace TestNHibernate2
 {
     public class Personne
     {
-        public virtual long Identifiant { get; set; }
+        public virtual long   Identifiant { get; set; }
         public virtual string Nom { get; set; }
         public virtual string Prenom { get; set; }
         public virtual string Adresse { get; set; }

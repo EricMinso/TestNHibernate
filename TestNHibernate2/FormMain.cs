@@ -1,6 +1,4 @@
-﻿
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,8 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
-
 using Microsoft.VisualBasic;
 
 
@@ -162,7 +158,33 @@ namespace TestNHibernate2
 
         private void btnSaisirPersonne_Click( object sender, EventArgs e )
         {
+            FormPersonne form = new FormPersonne();
+            form.ShowDialog();
 
+            if( form.PersonneSaisie != null )
+            {
+                try
+                {
+                    // Ouverture session
+                    NHibernate.ISession session = this.sessionFactory.OpenSession();
+
+                    // Démarrage Transaction
+                    NHibernate.ITransaction transaction = session.BeginTransaction();
+
+                    // Tell NHibernate that this object should be saved
+                    session.Save( form.PersonneSaisie );
+
+                    // Commit de la transaction
+                    transaction.Commit();
+
+                    // Fermeture session
+                    session.Close();
+                }
+                catch( Exception ex )
+                {
+                    Program.DisplayException( ex );
+                }
+            }
         }
     }
 }

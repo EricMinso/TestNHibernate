@@ -8,8 +8,8 @@ namespace TestNHibernate2
 {
     public class Projet
     {
-        public virtual long     Identifiant { get; set; }
-        public virtual string   Nom { get; set; }
+        public virtual long   Identifiant { get; set; }
+        public virtual string Nom { get; set; }
         //public DateTime DateDébut { get; set; }
 
         public Projet()

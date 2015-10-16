@@ -3,12 +3,12 @@
                    assembly="TestNHibernate2" 
                    namespace="TestNHibernate2">
 
-    <class name="Projet" table="Project">
+    <class name="Projet" table="Projects">
         <id name="Identifiant" column="ProjectId" type="int">
             <generator class="identity"></generator>
         </id>
 
-        <property name="Nom"        column="ProjectName"  type="String"/>
+        <property name="Nom" column="ProjectName"  type="String" />
     </class>
  
 
