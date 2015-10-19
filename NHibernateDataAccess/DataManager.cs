@@ -5,10 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 
 // Internal references
-//using DataModel;
+using DataModel;
 
 
-namespace NHibernateTestProject //NHibernateDataAccess
+namespace NHibernateDataAccess
 {
     public class DataManager
     {
@@ -76,9 +76,9 @@ namespace NHibernateTestProject //NHibernateDataAccess
         /// Get the list of all person objects from the database
         /// </summary>
         /// <returns>The list of all person objects from the database</returns>
-        public IList<Personne> getAllPersons()
+        public IList<Person> getAllPersons()
         {
-            IList<Personne> personList = null;
+            IList<Person> personList = null;
 
             try
             {
@@ -89,7 +89,7 @@ namespace NHibernateTestProject //NHibernateDataAccess
                 NHibernate.ITransaction transaction = session.BeginTransaction();
 
                 // Read table 'Persons'
-                personList = session.CreateCriteria<Personne>().List<Personne>();
+                personList = session.CreateCriteria<Person>().List<Person>();
 
                 // Tell NHibernate that this object should be saved
                 //session.Save(contact);
@@ -109,9 +109,9 @@ namespace NHibernateTestProject //NHibernateDataAccess
         /// Get the list of all project objects from the database
         /// </summary>
         /// <returns>The list of all project objects from the database</returns>
-        public IList<Projet> getAllProjects()
+        public IList<Project> getAllProjects()
         {
-            IList<Projet> projectList =null;
+            IList<Project> projectList =null;
 
             try
             {
@@ -122,7 +122,7 @@ namespace NHibernateTestProject //NHibernateDataAccess
                 NHibernate.ITransaction transaction = session.BeginTransaction();
 
                 // Read table 'Projects'
-                projectList = session.CreateCriteria<Projet>().List<Projet>();
+                projectList = session.CreateCriteria<Project>().List<Project>();
 
                 // Tell NHibernate that this object should be saved
                 //session.Save(contact);
@@ -145,7 +145,7 @@ namespace NHibernateTestProject //NHibernateDataAccess
         /// Persist a person into the database
         /// </summary>
         /// <param name="person">The person that will be persisted in DB</param>
-        public void savePerson( Personne person )
+        public void savePerson( Person person )
         {
             try
             {
@@ -174,7 +174,7 @@ namespace NHibernateTestProject //NHibernateDataAccess
         /// Persist a project into the database
         /// </summary>
         /// <param name="project">The project that will be persisted in DB</param>
-        public void saveProject(Projet projet)
+        public void saveProject(Project projet)
         {
             try
             {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace NHibernateTestProject // TestNHibernate2
+namespace TestNHibernate2
 {
     public static class Program
     {

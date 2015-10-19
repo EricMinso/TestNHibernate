@@ -1,11 +1,11 @@
 C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\NHibernateDataAccess\bin\Debug\NHibernateDataAccess.dll
 C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\NHibernateDataAccess\bin\Debug\NHibernateDataAccess.pdb
+C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\NHibernateDataAccess\bin\Debug\DataModel.dll
 C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\NHibernateDataAccess\bin\Debug\Iesi.Collections.dll
 C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\NHibernateDataAccess\bin\Debug\NHibernate.dll
+C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\NHibernateDataAccess\bin\Debug\DataModel.pdb
 C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\NHibernateDataAccess\bin\Debug\Iesi.Collections.xml
 C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\NHibernateDataAccess\bin\Debug\NHibernate.xml
+C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\NHibernateDataAccess\obj\Debug\NHibernateDataAccess.csprojResolveAssemblyReference.cache
 C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\NHibernateDataAccess\obj\Debug\NHibernateDataAccess.dll
 C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\NHibernateDataAccess\obj\Debug\NHibernateDataAccess.pdb
-C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\NHibernateDataAccess\obj\Debug\NHibernateDataAccess.csprojResolveAssemblyReference.cache
-C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\NHibernateDataAccess\bin\Debug\DataModel.dll
-C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\NHibernateDataAccess\bin\Debug\DataModel.pdb

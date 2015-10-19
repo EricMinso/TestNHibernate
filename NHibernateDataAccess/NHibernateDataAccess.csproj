@@ -49,12 +49,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Personne.hbm.xml" />
+    <EmbeddedResource Include="Person.hbm.xml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Projet.hbm.xml" />
+    <EmbeddedResource Include="Project.hbm.xml" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

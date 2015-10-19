@@ -1,4 +1,4 @@
-﻿namespace NHibernateTestProject //TestNHibernate2
+﻿namespace TestNHibernate2
 {
     partial class FormMain
     {
@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             this.tlpMain = new System.Windows.Forms.TableLayoutPanel();
-            this.flpBoutons = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnFermer = new System.Windows.Forms.Button();
-            this.lblPersonnes = new System.Windows.Forms.Label();
-            this.lbxPersonnes = new System.Windows.Forms.ListBox();
-            this.lbxProjets = new System.Windows.Forms.ListBox();
-            this.lblProjets = new System.Windows.Forms.Label();
-            this.flpPersonne = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnLirePersonnes = new System.Windows.Forms.Button();
-            this.btnSaisirPersonne = new System.Windows.Forms.Button();
-            this.flpProjet = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnProjets = new System.Windows.Forms.Button();
-            this.btnSaisirProjet = new System.Windows.Forms.Button();
+            this.flpButtons = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.lblPersons = new System.Windows.Forms.Label();
+            this.lbxPersons = new System.Windows.Forms.ListBox();
+            this.lbxProjects = new System.Windows.Forms.ListBox();
+            this.lblProjects = new System.Windows.Forms.Label();
+            this.flpPerson = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnReadPersons = new System.Windows.Forms.Button();
+            this.btnInputPerson = new System.Windows.Forms.Button();
+            this.flpProject = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnProjects = new System.Windows.Forms.Button();
+            this.btnInputProject = new System.Windows.Forms.Button();
             this.tlpMain.SuspendLayout();
-            this.flpBoutons.SuspendLayout();
-            this.flpPersonne.SuspendLayout();
-            this.flpProjet.SuspendLayout();
+            this.flpButtons.SuspendLayout();
+            this.flpPerson.SuspendLayout();
+            this.flpProject.SuspendLayout();
             this.SuspendLayout();
             // 
             // tlpMain
@@ -54,13 +54,13 @@
             this.tlpMain.ColumnCount = 2;
             this.tlpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tlpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tlpMain.Controls.Add(this.flpBoutons, 1, 3);
-            this.tlpMain.Controls.Add(this.lblPersonnes, 0, 0);
-            this.tlpMain.Controls.Add(this.lbxPersonnes, 0, 1);
-            this.tlpMain.Controls.Add(this.lbxProjets, 1, 1);
-            this.tlpMain.Controls.Add(this.lblProjets, 1, 0);
-            this.tlpMain.Controls.Add(this.flpPersonne, 0, 2);
-            this.tlpMain.Controls.Add(this.flpProjet, 1, 2);
+            this.tlpMain.Controls.Add(this.flpButtons, 1, 3);
+            this.tlpMain.Controls.Add(this.lblPersons, 0, 0);
+            this.tlpMain.Controls.Add(this.lbxPersons, 0, 1);
+            this.tlpMain.Controls.Add(this.lbxProjects, 1, 1);
+            this.tlpMain.Controls.Add(this.lblProjects, 1, 0);
+            this.tlpMain.Controls.Add(this.flpPerson, 0, 2);
+            this.tlpMain.Controls.Add(this.flpProject, 1, 2);
             this.tlpMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlpMain.Location = new System.Drawing.Point(20, 20);
             this.tlpMain.Margin = new System.Windows.Forms.Padding(5);
@@ -74,129 +74,129 @@
             this.tlpMain.Size = new System.Drawing.Size(681, 344);
             this.tlpMain.TabIndex = 0;
             // 
-            // flpBoutons
+            // flpButtons
             // 
-            this.flpBoutons.AutoSize = true;
-            this.flpBoutons.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.flpBoutons.Controls.Add(this.btnFermer);
-            this.flpBoutons.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flpBoutons.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flpBoutons.Location = new System.Drawing.Point(343, 307);
-            this.flpBoutons.Name = "flpBoutons";
-            this.flpBoutons.Size = new System.Drawing.Size(330, 29);
-            this.flpBoutons.TabIndex = 0;
+            this.flpButtons.AutoSize = true;
+            this.flpButtons.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.flpButtons.Controls.Add(this.btnClose);
+            this.flpButtons.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flpButtons.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
+            this.flpButtons.Location = new System.Drawing.Point(343, 307);
+            this.flpButtons.Name = "flpButtons";
+            this.flpButtons.Size = new System.Drawing.Size(330, 29);
+            this.flpButtons.TabIndex = 0;
             // 
-            // btnFermer
+            // btnClose
             // 
-            this.btnFermer.Location = new System.Drawing.Point(252, 3);
-            this.btnFermer.Name = "btnFermer";
-            this.btnFermer.Size = new System.Drawing.Size(75, 23);
-            this.btnFermer.TabIndex = 0;
-            this.btnFermer.Text = "Fermer";
-            this.btnFermer.UseVisualStyleBackColor = true;
-            this.btnFermer.Click += new System.EventHandler(this.btnFermer_Click);
+            this.btnClose.Location = new System.Drawing.Point(252, 3);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(75, 23);
+            this.btnClose.TabIndex = 0;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // lblPersonnes
+            // lblPersons
             // 
-            this.lblPersonnes.AutoSize = true;
-            this.lblPersonnes.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPersonnes.Location = new System.Drawing.Point(8, 5);
-            this.lblPersonnes.Name = "lblPersonnes";
-            this.lblPersonnes.Size = new System.Drawing.Size(66, 13);
-            this.lblPersonnes.TabIndex = 2;
-            this.lblPersonnes.Text = "Personnes";
+            this.lblPersons.AutoSize = true;
+            this.lblPersons.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPersons.Location = new System.Drawing.Point(8, 5);
+            this.lblPersons.Name = "lblPersons";
+            this.lblPersons.Size = new System.Drawing.Size(66, 13);
+            this.lblPersons.TabIndex = 2;
+            this.lblPersons.Text = "Persons";
             // 
-            // lbxPersonnes
+            // lbxPersons
             // 
-            this.lbxPersonnes.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbxPersonnes.FormattingEnabled = true;
-            this.lbxPersonnes.Location = new System.Drawing.Point(8, 21);
-            this.lbxPersonnes.Name = "lbxPersonnes";
-            this.lbxPersonnes.Size = new System.Drawing.Size(329, 245);
-            this.lbxPersonnes.TabIndex = 3;
+            this.lbxPersons.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbxPersons.FormattingEnabled = true;
+            this.lbxPersons.Location = new System.Drawing.Point(8, 21);
+            this.lbxPersons.Name = "lbxPersons";
+            this.lbxPersons.Size = new System.Drawing.Size(329, 245);
+            this.lbxPersons.TabIndex = 3;
             // 
-            // lbxProjets
+            // lbxProjects
             // 
-            this.lbxProjets.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbxProjets.FormattingEnabled = true;
-            this.lbxProjets.Location = new System.Drawing.Point(343, 21);
-            this.lbxProjets.Name = "lbxProjets";
-            this.lbxProjets.Size = new System.Drawing.Size(330, 245);
-            this.lbxProjets.TabIndex = 3;
+            this.lbxProjects.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbxProjects.FormattingEnabled = true;
+            this.lbxProjects.Location = new System.Drawing.Point(343, 21);
+            this.lbxProjects.Name = "lbxProjects";
+            this.lbxProjects.Size = new System.Drawing.Size(330, 245);
+            this.lbxProjects.TabIndex = 3;
             // 
-            // lblProjets
+            // lblProjects
             // 
-            this.lblProjets.AutoSize = true;
-            this.lblProjets.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProjets.Location = new System.Drawing.Point(343, 5);
-            this.lblProjets.Name = "lblProjets";
-            this.lblProjets.Size = new System.Drawing.Size(46, 13);
-            this.lblProjets.TabIndex = 2;
-            this.lblProjets.Text = "Projets";
+            this.lblProjects.AutoSize = true;
+            this.lblProjects.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProjects.Location = new System.Drawing.Point(343, 5);
+            this.lblProjects.Name = "lblProjects";
+            this.lblProjects.Size = new System.Drawing.Size(46, 13);
+            this.lblProjects.TabIndex = 2;
+            this.lblProjects.Text = "Projects";
             // 
-            // flpPersonne
+            // flpPerson
             // 
-            this.flpPersonne.AutoSize = true;
-            this.flpPersonne.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.flpPersonne.Controls.Add(this.btnLirePersonnes);
-            this.flpPersonne.Controls.Add(this.btnSaisirPersonne);
-            this.flpPersonne.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flpPersonne.Location = new System.Drawing.Point(8, 272);
-            this.flpPersonne.Name = "flpPersonne";
-            this.flpPersonne.Size = new System.Drawing.Size(329, 29);
-            this.flpPersonne.TabIndex = 4;
+            this.flpPerson.AutoSize = true;
+            this.flpPerson.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.flpPerson.Controls.Add(this.btnReadPersons);
+            this.flpPerson.Controls.Add(this.btnInputPerson);
+            this.flpPerson.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flpPerson.Location = new System.Drawing.Point(8, 272);
+            this.flpPerson.Name = "flpPerson";
+            this.flpPerson.Size = new System.Drawing.Size(329, 29);
+            this.flpPerson.TabIndex = 4;
             // 
-            // btnLirePersonnes
+            // btnReadPersons
             // 
-            this.btnLirePersonnes.Location = new System.Drawing.Point(3, 3);
-            this.btnLirePersonnes.Name = "btnLirePersonnes";
-            this.btnLirePersonnes.Size = new System.Drawing.Size(112, 23);
-            this.btnLirePersonnes.TabIndex = 1;
-            this.btnLirePersonnes.Text = "Lire Personnes";
-            this.btnLirePersonnes.UseVisualStyleBackColor = true;
-            this.btnLirePersonnes.Click += new System.EventHandler(this.btnLirePersonnes_Click);
+            this.btnReadPersons.Location = new System.Drawing.Point(3, 3);
+            this.btnReadPersons.Name = "btnReadPersons";
+            this.btnReadPersons.Size = new System.Drawing.Size(112, 23);
+            this.btnReadPersons.TabIndex = 1;
+            this.btnReadPersons.Text = "Read Persons";
+            this.btnReadPersons.UseVisualStyleBackColor = true;
+            this.btnReadPersons.Click += new System.EventHandler(this.btnLirePersonnes_Click);
             // 
-            // btnSaisirPersonne
+            // btnInputPerson
             // 
-            this.btnSaisirPersonne.Location = new System.Drawing.Point(121, 3);
-            this.btnSaisirPersonne.Name = "btnSaisirPersonne";
-            this.btnSaisirPersonne.Size = new System.Drawing.Size(112, 23);
-            this.btnSaisirPersonne.TabIndex = 1;
-            this.btnSaisirPersonne.Text = "Saisir Personne";
-            this.btnSaisirPersonne.UseVisualStyleBackColor = true;
-            this.btnSaisirPersonne.Click += new System.EventHandler(this.btnSaisirPersonne_Click);
+            this.btnInputPerson.Location = new System.Drawing.Point(121, 3);
+            this.btnInputPerson.Name = "btnInputPerson";
+            this.btnInputPerson.Size = new System.Drawing.Size(112, 23);
+            this.btnInputPerson.TabIndex = 1;
+            this.btnInputPerson.Text = "Input Personne";
+            this.btnInputPerson.UseVisualStyleBackColor = true;
+            this.btnInputPerson.Click += new System.EventHandler(this.btnSaisirPersonne_Click);
             // 
-            // flpProjet
+            // flpProject
             // 
-            this.flpProjet.AutoSize = true;
-            this.flpProjet.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.flpProjet.Controls.Add(this.btnProjets);
-            this.flpProjet.Controls.Add(this.btnSaisirProjet);
-            this.flpProjet.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flpProjet.Location = new System.Drawing.Point(343, 272);
-            this.flpProjet.Name = "flpProjet";
-            this.flpProjet.Size = new System.Drawing.Size(330, 29);
-            this.flpProjet.TabIndex = 5;
+            this.flpProject.AutoSize = true;
+            this.flpProject.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.flpProject.Controls.Add(this.btnProjects);
+            this.flpProject.Controls.Add(this.btnInputProject);
+            this.flpProject.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flpProject.Location = new System.Drawing.Point(343, 272);
+            this.flpProject.Name = "flpProject";
+            this.flpProject.Size = new System.Drawing.Size(330, 29);
+            this.flpProject.TabIndex = 5;
             // 
-            // btnProjets
+            // btnProjects
             // 
-            this.btnProjets.Location = new System.Drawing.Point(3, 3);
-            this.btnProjets.Name = "btnProjets";
-            this.btnProjets.Size = new System.Drawing.Size(112, 23);
-            this.btnProjets.TabIndex = 1;
-            this.btnProjets.Text = "Lire Projets";
-            this.btnProjets.UseVisualStyleBackColor = true;
-            this.btnProjets.Click += new System.EventHandler(this.btnLireProjets_Click);
+            this.btnProjects.Location = new System.Drawing.Point(3, 3);
+            this.btnProjects.Name = "btnProjects";
+            this.btnProjects.Size = new System.Drawing.Size(112, 23);
+            this.btnProjects.TabIndex = 1;
+            this.btnProjects.Text = "Read Projects";
+            this.btnProjects.UseVisualStyleBackColor = true;
+            this.btnProjects.Click += new System.EventHandler(this.btnLireProjets_Click);
             // 
-            // btnSaisirProjet
+            // btnInputProject
             // 
-            this.btnSaisirProjet.Location = new System.Drawing.Point(121, 3);
-            this.btnSaisirProjet.Name = "btnSaisirProjet";
-            this.btnSaisirProjet.Size = new System.Drawing.Size(112, 23);
-            this.btnSaisirProjet.TabIndex = 1;
-            this.btnSaisirProjet.Text = "Saisir Projet";
-            this.btnSaisirProjet.UseVisualStyleBackColor = true;
-            this.btnSaisirProjet.Click += new System.EventHandler(this.btnSaisirProjet_Click);
+            this.btnInputProject.Location = new System.Drawing.Point(121, 3);
+            this.btnInputProject.Name = "btnInputProject";
+            this.btnInputProject.Size = new System.Drawing.Size(112, 23);
+            this.btnInputProject.TabIndex = 1;
+            this.btnInputProject.Text = "Input Project";
+            this.btnInputProject.UseVisualStyleBackColor = true;
+            this.btnInputProject.Click += new System.EventHandler(this.btnSaisirProjet_Click);
             // 
             // FormMain
             // 
@@ -210,9 +210,9 @@
             this.Text = "FormMain";
             this.tlpMain.ResumeLayout(false);
             this.tlpMain.PerformLayout();
-            this.flpBoutons.ResumeLayout(false);
-            this.flpPersonne.ResumeLayout(false);
-            this.flpProjet.ResumeLayout(false);
+            this.flpButtons.ResumeLayout(false);
+            this.flpPerson.ResumeLayout(false);
+            this.flpProject.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -221,17 +221,17 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tlpMain;
-        private System.Windows.Forms.FlowLayoutPanel flpBoutons;
-        private System.Windows.Forms.Button btnFermer;
-        private System.Windows.Forms.Button btnLirePersonnes;
-        private System.Windows.Forms.Label lblPersonnes;
-        private System.Windows.Forms.ListBox lbxPersonnes;
-        private System.Windows.Forms.ListBox lbxProjets;
-        private System.Windows.Forms.Label lblProjets;
-        private System.Windows.Forms.Button btnProjets;
-        private System.Windows.Forms.FlowLayoutPanel flpPersonne;
-        private System.Windows.Forms.Button btnSaisirPersonne;
-        private System.Windows.Forms.FlowLayoutPanel flpProjet;
-        private System.Windows.Forms.Button btnSaisirProjet;
+        private System.Windows.Forms.FlowLayoutPanel flpButtons;
+        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnReadPersons;
+        private System.Windows.Forms.Label lblPersons;
+        private System.Windows.Forms.ListBox lbxPersons;
+        private System.Windows.Forms.ListBox lbxProjects;
+        private System.Windows.Forms.Label lblProjects;
+        private System.Windows.Forms.Button btnProjects;
+        private System.Windows.Forms.FlowLayoutPanel flpPerson;
+        private System.Windows.Forms.Button btnInputPerson;
+        private System.Windows.Forms.FlowLayoutPanel flpProject;
+        private System.Windows.Forms.Button btnInputProject;
     }
 }

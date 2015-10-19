@@ -9,16 +9,16 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 // Internal References
-//using DataModel;
+using DataModel;
 
 
-namespace NHibernateTestProject // TestNHibernate2
+namespace TestNHibernate2
 {
-    public partial class FormPersonne : Form
+    public partial class FormPerson : Form
     {
-        private Personne _personneSaisie = null;
+        private Person _personneSaisie = null;
 
-        public Personne PersonneSaisie
+        public Person PersonneSaisie
         {
             get
             {
@@ -26,7 +26,7 @@ namespace NHibernateTestProject // TestNHibernate2
             }
         }
 
-        public FormPersonne()
+        public FormPerson()
         {
             InitializeComponent();
         }
@@ -39,11 +39,11 @@ namespace NHibernateTestProject // TestNHibernate2
 
         private void btnValider_Click( object sender, EventArgs e )
         {
-            this._personneSaisie = new Personne(
-                this.tbxNom.Text,
-                this.tbxPrénom.Text,
-                this.tbxAdresse.Text,
-                this.tbxTéléphone.Text );
+            this._personneSaisie = new Person(
+                this.tbxLastName.Text,
+                this.tbxFirstName.Text,
+                this.tbxAddress.Text,
+                this.tbxPhone.Text );
             this.Close();
         }
     }

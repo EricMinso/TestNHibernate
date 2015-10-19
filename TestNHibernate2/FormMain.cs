@@ -10,11 +10,11 @@ using System.Windows.Forms;
 using Microsoft.VisualBasic;
 
 // Internal References
-//using DataModel;
-//using NHibernateDataAccess;
+using DataModel;
+using NHibernateDataAccess;
 
 
-namespace NHibernateTestProject //TestNHibernate2
+namespace TestNHibernate2
 {
     public partial class FormMain : Form
     {
@@ -38,7 +38,7 @@ namespace NHibernateTestProject //TestNHibernate2
 #endregion
 #region GUI event handlers
 
-        private void btnFermer_Click(object sender, EventArgs e)
+        private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
         }
@@ -47,15 +47,15 @@ namespace NHibernateTestProject //TestNHibernate2
         {
             try
             {
-                this.lbxPersonnes.Items.Clear();
+                this.lbxPersons.Items.Clear();
 
                 // Get data
-                IList<Personne> personList = this._dataManager.getAllPersons();
+                IList<Person> personList = this._dataManager.getAllPersons();
 
                 // Fill listbox with data from the database
-                foreach( Personne pers in personList )
+                foreach( Person pers in personList )
                 {
-                    this.lbxPersonnes.Items.Add( pers );
+                    this.lbxPersons.Items.Add( pers );
                 }
             }
             catch( Exception ex )
@@ -69,17 +69,17 @@ namespace NHibernateTestProject //TestNHibernate2
         {
             try
             {
-                this.lbxProjets.Items.Clear();
+                this.lbxProjects.Items.Clear();
 
                 // Get data
-                IList<Projet> projectList = this._dataManager.getAllProjects();
+                IList<Project> projectList = this._dataManager.getAllProjects();
                 
 
                 // Ajout interface graphique
                 //this.lbxProjets.Items.AddRange(listeProjets);
-                foreach( Projet proj in projectList )
+                foreach( Project proj in projectList )
                 {
-                    this.lbxProjets.Items.Add( proj );
+                    this.lbxProjects.Items.Add( proj );
                 }
             }
             catch (Exception ex)
@@ -96,7 +96,7 @@ namespace NHibernateTestProject //TestNHibernate2
                 string nomProjet = Interaction.InputBox( "Quel est le nom du projet ?" );
 
                 // Création objet
-                Projet projet = new Projet( nomProjet );
+                Project projet = new Project( nomProjet );
 
                 this._dataManager.saveProject( projet );
             }
@@ -108,7 +108,7 @@ namespace NHibernateTestProject //TestNHibernate2
 
         private void btnSaisirPersonne_Click( object sender, EventArgs e )
         {
-            FormPersonne form = new FormPersonne();
+            FormPerson form = new FormPerson();
             form.ShowDialog();
 
             if( form.PersonneSaisie != null )

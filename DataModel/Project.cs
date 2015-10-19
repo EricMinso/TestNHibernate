@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NHibernateTestProject //DataModel
+namespace DataModel
 {
-    public class Projet
+    public class Project
     {
 #region Properties
 
-        public virtual long   Identifiant { get; set; }
-        public virtual string Nom { get; set; }
+        public virtual long   Id { get; set; }
+        public virtual string Name { get; set; }
 
 #endregion
 #region Constructors
@@ -19,19 +19,19 @@ namespace NHibernateTestProject //DataModel
         /// <summary>
         /// Create a new empty project
         /// </summary>
-        public Projet()
+        public Project()
         {
-            this.Identifiant = -1;
-            this.Nom = "";
+            this.Id = -1;
+            this.Name = "";
         }
 
         /// <summary>
         /// Create a project with a specified name
         /// </summary>
-        public Projet( string nom )
+        public Project( string name )
         {
-            this.Identifiant = -1;
-            this.Nom = nom;
+            this.Id = -1;
+            this.Name = name;
         }
 
 #endregion
@@ -43,7 +43,7 @@ namespace NHibernateTestProject //DataModel
         /// <returns>A string that represents this object</returns>
         public override string ToString()
         {
-            return this.Nom;
+            return this.Name;
         }
 
 #endregion
