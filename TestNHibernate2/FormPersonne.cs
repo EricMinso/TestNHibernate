@@ -8,7 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TestNHibernate2
+// Internal References
+//using DataModel;
+
+
+namespace NHibernateTestProject // TestNHibernate2
 {
     public partial class FormPersonne : Form
     {

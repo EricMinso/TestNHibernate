@@ -9,39 +9,34 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.VisualBasic;
 
+// Internal References
+//using DataModel;
+//using NHibernateDataAccess;
 
-namespace TestNHibernate2
+
+namespace NHibernateTestProject //TestNHibernate2
 {
     public partial class FormMain : Form
     {
-        // Configuration NHibernate 
-        NHibernate.Cfg.Configuration config;
+#region Instance Variables
 
-        // Factory NHibernate 
-        private NHibernate.ISessionFactory sessionFactory;
+        private DataManager _dataManager;
 
+#endregion
+#region Constructor, Destructor
 
-        // Constructeur par défaut
         public FormMain()
         {
             InitializeComponent();
-
-            // Configuration NHibernate 
-            this.config = new NHibernate.Cfg.Configuration();
-
-            // Ajout assembly
-            this.config.AddAssembly("TestNHibernate2");
-
-            // Initialisation factory NHibernate 
-            sessionFactory = new NHibernate.Cfg.Configuration().Configure().BuildSessionFactory(); 
+            _dataManager = DataManager.getInstance();
         }
 
         ~FormMain()
         { 
-            // Fermeture Factory
-            if( this.sessionFactory != null && ! this.sessionFactory.IsClosed )
-                sessionFactory.Close();
         }
+
+#endregion
+#region GUI event handlers
 
         private void btnFermer_Click(object sender, EventArgs e)
         {
@@ -52,30 +47,13 @@ namespace TestNHibernate2
         {
             try
             {
-                // Nettoyage 
                 this.lbxPersonnes.Items.Clear();
 
-                // Ouverture session
-                NHibernate.ISession session = this.sessionFactory.OpenSession();
+                // Get data
+                IList<Personne> personList = this._dataManager.getAllPersons();
 
-                // Démarrage Transaction
-                NHibernate.ITransaction transaction = session.BeginTransaction();
-
-                // Lire toute la table 'Persons'
-                var listePersonnes = session.CreateCriteria<Personne>().List<Personne>();
-
-                // Tell NHibernate that this object should be saved
-                //session.Save(contact);
-
-                // Commit de la transaction
-                transaction.Commit();
-
-                // Fermeture session
-                session.Close();
-
-                // Ajout interface graphique
-                //this.lbxProjets.Items.AddRange(listeProjets);
-                foreach( Personne pers in listePersonnes )
+                // Fill listbox with data from the database
+                foreach( Personne pers in personList )
                 {
                     this.lbxPersonnes.Items.Add( pers );
                 }
@@ -91,30 +69,15 @@ namespace TestNHibernate2
         {
             try
             {
-                // Nettoyage 
                 this.lbxProjets.Items.Clear();
 
-                // Ouverture session
-                NHibernate.ISession session = this.sessionFactory.OpenSession();
-
-                // Démarrage Transaction
-                NHibernate.ITransaction transaction = session.BeginTransaction();
-
-                // Lire toute la table 'Projets'
-                var listeProjets = session.CreateCriteria<Projet>().List<Projet>();
-
-                // Tell NHibernate that this object should be saved
-                //session.Save(contact);
-
-                // Commit de la transaction
-                transaction.Commit();
-
-                // Fermeture session
-                session.Close();
+                // Get data
+                IList<Projet> projectList = this._dataManager.getAllProjects();
+                
 
                 // Ajout interface graphique
                 //this.lbxProjets.Items.AddRange(listeProjets);
-                foreach( Projet proj in listeProjets )
+                foreach( Projet proj in projectList )
                 {
                     this.lbxProjets.Items.Add( proj );
                 }
@@ -122,7 +85,7 @@ namespace TestNHibernate2
             catch (Exception ex)
             {
                 Program.DisplayException(ex);
-            }
+            }//*/
         }
 
         private void btnSaisirProjet_Click( object sender, EventArgs e )
@@ -135,20 +98,7 @@ namespace TestNHibernate2
                 // Création objet
                 Projet projet = new Projet( nomProjet );
 
-                // Ouverture session
-                NHibernate.ISession session = this.sessionFactory.OpenSession();
-
-                // Démarrage Transaction
-                NHibernate.ITransaction transaction = session.BeginTransaction();
-
-                // Tell NHibernate that this object should be saved
-                session.Save( projet );
-
-                // Commit de la transaction
-                transaction.Commit();
-
-                // Fermeture session
-                session.Close();
+                this._dataManager.saveProject( projet );
             }
             catch( Exception ex )
             {
@@ -165,27 +115,15 @@ namespace TestNHibernate2
             {
                 try
                 {
-                    // Ouverture session
-                    NHibernate.ISession session = this.sessionFactory.OpenSession();
-
-                    // Démarrage Transaction
-                    NHibernate.ITransaction transaction = session.BeginTransaction();
-
-                    // Tell NHibernate that this object should be saved
-                    session.Save( form.PersonneSaisie );
-
-                    // Commit de la transaction
-                    transaction.Commit();
-
-                    // Fermeture session
-                    session.Close();
+                    this._dataManager.savePerson( form.PersonneSaisie );
                 }
                 catch( Exception ex )
                 {
                     Program.DisplayException( ex );
                 }
-            }
+            }//*/
         }
+#endregion 
     }
 }
 

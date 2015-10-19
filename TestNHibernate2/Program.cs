@@ -4,12 +4,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TestNHibernate2
+namespace NHibernateTestProject // TestNHibernate2
 {
     public static class Program
     {
         /// <summary>
-        /// Point d'entrée principal de l'application.
+        /// The Entry point
         /// </summary>
         [STAThread]
         public static void Main()
@@ -26,18 +26,22 @@ namespace TestNHibernate2
             }
         }
 
+        /// <summary>
+        /// Displays all exceptions the same way
+        /// </summary>
+        /// <param name="ex">The exception to display</param>
         public static void DisplayException( Exception ex )
         {
             MessageBox.Show(
                 ex.GetType() + " : " + ex.Message + "\n" + ex.StackTrace, 
-                "Erreur : " + ex.Source, 
+                "Error : " + ex.Source, 
                 MessageBoxButtons.OK, 
                 MessageBoxIcon.Exclamation, 
                 MessageBoxDefaultButton.Button1
             );
 
             if( ex.InnerException != null &&
-              DialogResult.Yes == MessageBox.Show("Une exception plus précise est à l'origine de cette erreur. Voulez-vous la consulter ?", "InnerException trouvée", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1 ))
+              DialogResult.Yes == MessageBox.Show("More details are available. Would you like to read it ?", "InnerException has been found", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1 ))
                 DisplayException( ex.InnerException );
         }
     }

@@ -1,4 +1,4 @@
-﻿namespace TestNHibernate2
+﻿namespace NHibernateTestProject //TestNHibernate2
 {
     partial class FormMain
     {
@@ -31,15 +31,15 @@
             this.tlpMain = new System.Windows.Forms.TableLayoutPanel();
             this.flpBoutons = new System.Windows.Forms.FlowLayoutPanel();
             this.btnFermer = new System.Windows.Forms.Button();
-            this.btnLirePersonnes = new System.Windows.Forms.Button();
             this.lblPersonnes = new System.Windows.Forms.Label();
             this.lbxPersonnes = new System.Windows.Forms.ListBox();
             this.lbxProjets = new System.Windows.Forms.ListBox();
             this.lblProjets = new System.Windows.Forms.Label();
-            this.btnProjets = new System.Windows.Forms.Button();
             this.flpPersonne = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnLirePersonnes = new System.Windows.Forms.Button();
             this.btnSaisirPersonne = new System.Windows.Forms.Button();
             this.flpProjet = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnProjets = new System.Windows.Forms.Button();
             this.btnSaisirProjet = new System.Windows.Forms.Button();
             this.tlpMain.SuspendLayout();
             this.flpBoutons.SuspendLayout();
@@ -96,16 +96,6 @@
             this.btnFermer.UseVisualStyleBackColor = true;
             this.btnFermer.Click += new System.EventHandler(this.btnFermer_Click);
             // 
-            // btnLirePersonnes
-            // 
-            this.btnLirePersonnes.Location = new System.Drawing.Point(3, 3);
-            this.btnLirePersonnes.Name = "btnLirePersonnes";
-            this.btnLirePersonnes.Size = new System.Drawing.Size(112, 23);
-            this.btnLirePersonnes.TabIndex = 1;
-            this.btnLirePersonnes.Text = "Lire Personnes";
-            this.btnLirePersonnes.UseVisualStyleBackColor = true;
-            this.btnLirePersonnes.Click += new System.EventHandler(this.btnLirePersonnes_Click);
-            // 
             // lblPersonnes
             // 
             this.lblPersonnes.AutoSize = true;
@@ -144,16 +134,6 @@
             this.lblProjets.TabIndex = 2;
             this.lblProjets.Text = "Projets";
             // 
-            // btnProjets
-            // 
-            this.btnProjets.Location = new System.Drawing.Point(3, 3);
-            this.btnProjets.Name = "btnProjets";
-            this.btnProjets.Size = new System.Drawing.Size(112, 23);
-            this.btnProjets.TabIndex = 1;
-            this.btnProjets.Text = "Lire Projets";
-            this.btnProjets.UseVisualStyleBackColor = true;
-            this.btnProjets.Click += new System.EventHandler(this.btnLireProjets_Click);
-            // 
             // flpPersonne
             // 
             this.flpPersonne.AutoSize = true;
@@ -165,6 +145,16 @@
             this.flpPersonne.Name = "flpPersonne";
             this.flpPersonne.Size = new System.Drawing.Size(329, 29);
             this.flpPersonne.TabIndex = 4;
+            // 
+            // btnLirePersonnes
+            // 
+            this.btnLirePersonnes.Location = new System.Drawing.Point(3, 3);
+            this.btnLirePersonnes.Name = "btnLirePersonnes";
+            this.btnLirePersonnes.Size = new System.Drawing.Size(112, 23);
+            this.btnLirePersonnes.TabIndex = 1;
+            this.btnLirePersonnes.Text = "Lire Personnes";
+            this.btnLirePersonnes.UseVisualStyleBackColor = true;
+            this.btnLirePersonnes.Click += new System.EventHandler(this.btnLirePersonnes_Click);
             // 
             // btnSaisirPersonne
             // 
@@ -187,6 +177,16 @@
             this.flpProjet.Name = "flpProjet";
             this.flpProjet.Size = new System.Drawing.Size(330, 29);
             this.flpProjet.TabIndex = 5;
+            // 
+            // btnProjets
+            // 
+            this.btnProjets.Location = new System.Drawing.Point(3, 3);
+            this.btnProjets.Name = "btnProjets";
+            this.btnProjets.Size = new System.Drawing.Size(112, 23);
+            this.btnProjets.TabIndex = 1;
+            this.btnProjets.Text = "Lire Projets";
+            this.btnProjets.UseVisualStyleBackColor = true;
+            this.btnProjets.Click += new System.EventHandler(this.btnLireProjets_Click);
             // 
             // btnSaisirProjet
             // 

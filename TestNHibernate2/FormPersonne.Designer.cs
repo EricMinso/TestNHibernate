@@ -1,4 +1,4 @@
-﻿namespace TestNHibernate2
+﻿namespace NHibernateTestProject // TestNHibernate2
 {
     partial class FormPersonne
     {
