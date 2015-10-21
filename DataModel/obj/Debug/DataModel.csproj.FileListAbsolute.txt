@@ -2,3 +2,4 @@ C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\DataModel\bin\Debug\
 C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\DataModel\bin\Debug\DataModel.pdb
 C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\DataModel\obj\Debug\DataModel.dll
 C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\DataModel\obj\Debug\DataModel.pdb
+C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\DataModel\obj\Debug\DataModel.csprojResolveAssemblyReference.cache

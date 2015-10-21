@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHibernateDataAccess", "NHi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataModel", "DataModel\DataModel.csproj", "{C4C7044A-BD90-45FC-BDAF-FCE14E677190}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelAddInNHibernate", "ExcelAddIn1\ExcelAddInNHibernate.csproj", "{412B3056-1AD8-4F2E-A924-D45616768870}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C4C7044A-BD90-45FC-BDAF-FCE14E677190}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4C7044A-BD90-45FC-BDAF-FCE14E677190}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4C7044A-BD90-45FC-BDAF-FCE14E677190}.Release|Any CPU.Build.0 = Release|Any CPU
+		{412B3056-1AD8-4F2E-A924-D45616768870}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{412B3056-1AD8-4F2E-A924-D45616768870}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{412B3056-1AD8-4F2E-A924-D45616768870}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{412B3056-1AD8-4F2E-A924-D45616768870}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

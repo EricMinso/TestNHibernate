@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?> 
 <hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" 
-                   assembly="DataModel" 
-                   namespace="DataModel">
+                   assembly="NHibernateDataAccess" 
+                   namespace="NHibernateDataAccess">
 
     <class name="Person" table="Persons">
         <id name="Id" column="PersonId" type="long">

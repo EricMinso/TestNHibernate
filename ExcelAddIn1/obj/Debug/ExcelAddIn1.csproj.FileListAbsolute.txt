@@ -1,0 +1,12 @@
+C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\ExcelAddIn1\bin\Debug\ExcelAddIn1.dll
+C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\ExcelAddIn1\bin\Debug\ExcelAddIn1.pdb
+C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\ExcelAddIn1\bin\Debug\ExcelAddIn1.dll.manifest
+C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\ExcelAddIn1\bin\Debug\ExcelAddIn1.vsto
+C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\ExcelAddIn1\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\ExcelAddIn1\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.xml
+C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\ExcelAddIn1\obj\Debug\ExcelAddIn1.csprojResolveAssemblyReference.cache
+C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\ExcelAddIn1\obj\Debug\ExcelAddIn1.Properties.Resources.resources
+C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\ExcelAddIn1\obj\Debug\ExcelAddIn1.Ribbon1.resources
+C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\ExcelAddIn1\obj\Debug\ExcelAddIn1.csproj.GenerateResource.Cache
+C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\ExcelAddIn1\obj\Debug\ExcelAddIn1.dll
+C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\ExcelAddIn1\obj\Debug\ExcelAddIn1.pdb
