@@ -45,13 +45,17 @@ namespace NHibernateDataAccess
             try
             {
                 // Initialise NHibernate Configuration  
-                this.config = new NHibernate.Cfg.Configuration();
+                this.config = new NHibernate.Cfg.Configuration().Configure();
 
                 // Add assembly
-                this.config.AddAssembly( "NHibernateDataAccess" );
+                this.config.AddAssembly( typeof(Person).Assembly );
+                //this.config.AddAssembly( "Contact.hbm.xml" );
+                //this.config.AddAssembly( "Person.hbm.xml" );
+                //this.config.AddAssembly( "Project.hbm.xml" );
+                //this.config.AddAssembly( "DataModel" );
 
                 // Initialise NHibernate factory
-                sessionFactory = new NHibernate.Cfg.Configuration().Configure().BuildSessionFactory();
+                sessionFactory = this.config.BuildSessionFactory();
             }
             catch( Exception ex )
             {

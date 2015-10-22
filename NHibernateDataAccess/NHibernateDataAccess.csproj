@@ -49,13 +49,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Person.hbm.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Project.hbm.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="App.config" />
+    <None Include="App.config" />
+    <None Include="App.config.old" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

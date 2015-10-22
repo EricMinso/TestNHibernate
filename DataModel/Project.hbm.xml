@@ -4,7 +4,7 @@
                    namespace="DataModel">
 
     <class name="Project" table="Projects">
-        <id name="Id" column="ProjectId" type="int">
+        <id name="Id" column="ProjectId" type="long">
             <generator class="identity"></generator>
         </id>
 

@@ -1,3 +1,4 @@
+C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\TestNHibernate2\bin\Debug\TestNHibernate2.exe.config
 C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\TestNHibernate2\bin\Debug\TestNHibernate2.exe
 C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\TestNHibernate2\bin\Debug\TestNHibernate2.pdb
 C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\TestNHibernate2\bin\Debug\DataModel.dll

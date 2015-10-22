@@ -1,3 +1,4 @@
+C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\NHibernateDataAccess\bin\Debug\NHibernateDataAccess.dll.config
 C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\NHibernateDataAccess\bin\Debug\NHibernateDataAccess.dll
 C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\NHibernateDataAccess\bin\Debug\NHibernateDataAccess.pdb
 C:\Users\eminso\Documents\Visual Studio 2013\Projects\Tests\NHibernateDataAccess\bin\Debug\DataModel.dll

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+
+    <!-- section definitions -->
+    <configSections>
+        <section name="hibernate-configuration" type="NHibernate.Cfg.ConfigurationSectionHandler, NHibernate" />
+        <!-- section name="log4net" type="log4net.Config.Log4NetConfigurationSectionHandler,log4net" / -->
+    </configSections>
+ 
+    <!-- NHibernate -->
+    <hibernate-configuration xmlns="urn:nhibernate-configuration-2.2">
+        <session-factory>
+            <property name="connection.provider">NHibernate.Connection.DriverConnectionProvider</property>
+            <property name="dialect">NHibernate.Dialect.MsSql2012Dialect</property>
+            <property name="connection.driver_class">NHibernate.Driver.SqlClientDriver</property>
+            <property name="connection.connection_string">Data Source=localhost\TESTERIC;Initial Catalog=TestEric;Integrated Security=True</property>
+            <property name="show_sql">true</property>
+            <mapping hibernate-configuration="NHibernateDataAccess" />
+        </session-factory>
+    </hibernate-configuration>
+
+    <!-- log4net -->
+    <!-- log4net debug="true">
+        <logger name="NHibernate">
+            <level value="DEBUG" />
+        </logger>
+        <logger name="NHibernate.SQL">
+            <level value="DEBUG" />
+        </logger>
+    </log4net -->
+    
+    <startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5" />
+    </startup>
+</configuration>
